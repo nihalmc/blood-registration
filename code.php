@@ -2,9 +2,9 @@
 session_start(); 
 require 'dbcon.php';
 
-if(isset($_POST ['donor_student']))
+if(isset($_POST ['donor_delete']))
 {
-    $donor_id =mysqli_real_escape_string($con,$_POST['donor_student']);
+    $donor_id =mysqli_real_escape_string($con,$_POST['donor_delete']);
 
     $query = "DELETE FROM donors WHERE id='$donor_id' ";
     $query_run =mysqli_query($con,$query);

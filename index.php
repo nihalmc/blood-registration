@@ -61,7 +61,7 @@ require 'dbcon.php';
                             <a href="donor-view.php?id=<?= $donor['id'];?>" class="btn btn-info btn-sm">View</a>
                             <a href="donor-edit.php?id=<?= $donor['id'];?>" class="btn btn-success btn-sm">Edit</a>
                   <form action="code.php" method="post" class="d-inline">
-                    <button type="submit" name="donor_student" value="<?= $donor['id'];?>" class="btn btn-danger btn-sm">Delete</button>
+                    <button type="submit" name="donor_delete" value="<?= $donor['id'];?>" class="btn btn-danger btn-sm">Delete</button>
                   </form>
                          </td>
                     </tr>
